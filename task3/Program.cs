@@ -5,13 +5,6 @@
 //8 4 2 4
 //Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
-
 int rows = 3;
 int colums = 4;
 int[,] numbers = new int[rows, colums];

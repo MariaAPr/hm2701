@@ -6,14 +6,11 @@
 //8 4 2 4
 //17 -> такого числа в массиве нет
 
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+Console.Write("Введите кол-во строк: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите кол-во столбцов: ");
+int colums = Convert.ToInt32(Console.ReadLine());
 
-int rows = ReadInt("Введите индекс строки: ");
-int colums = ReadInt("Введите индекс столбца: ");
 int[,] numbers = new int[6, 8];
 FillArray2D(numbers);
 PrintArray2D(numbers);
